@@ -1,0 +1,94 @@
+* {
+  border: none;
+  font-family: Font Awesome, Roboto, Arial, sans-serif;
+  font-size: 13px;
+  color: #ffffff;
+  border-radius: 15px;
+}
+
+window {
+  font-weight: bold;
+}
+window#waybar {
+  background: rgba(0, 0, 0, 0);
+}
+/*-----module groups----*/
+.modules-right {
+  background-color: @theme_bg_color;
+  margin: 5px;
+}
+.modules-center {
+  background-color: @theme_bg_color;
+  margin: 5px;
+}
+.modules-left {
+  background-color: @theme_bg_color;
+  margin: 5px;
+}
+/*-----modules indv----*/
+#workspaces button {
+  padding: 1px 5px;
+  background-color: transparent;
+}
+#workspaces button:hover {
+  box-shadow: inherit;
+  background-color: @theme_base_color;
+}
+
+#workspaces button.focused {
+  border: solid 1px;
+  background-color: @theme_selected_bg_color;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#temperature,
+#network,
+#pulseaudio,
+#custom-media,
+#tray,
+#language,
+#mode,
+#custom-power,
+#custom-menu,
+#idle_inhibitor,
+#window {
+  padding: 0 6px;
+  margin: 3px 6px;
+  /* margin: 0 10px; */
+}
+#mode {
+  color: #cc3436;
+  font-weight: bold;
+}
+#custom-power {
+  background-color: #cc3436;
+  border-radius: 50px;
+  margin: 5px 5px;
+  padding: 1px 3px;
+}
+/*-----Indicators----*/
+#idle_inhibitor.activated {
+  color: #2dcc36;
+}
+#language {
+  border: solid 1px;
+  background-color: @theme_selected_bg_color;
+}
+#pulseaudio.muted {
+  color: #cc3436;
+}
+#battery.charging {
+  color: #2dcc36;
+}
+#battery.warning:not(.charging) {
+  color: #e6e600;
+}
+#battery.critical:not(.charging) {
+  color: #cc3436;
+}
+#temperature.critical {
+  color: #cc3436;
+}
