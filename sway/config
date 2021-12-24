@@ -225,7 +225,4 @@ gaps inner 5
 ### CUSTOM Enable xwayland
 xwayland enable
 
-### CUSTOM Enable GSettings theme persistence
-#exec_always ./import-gsettings.sh
-
 include /etc/sway/config.d/*
